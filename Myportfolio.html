@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diptendu's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="animation.css">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            /* background-image: url(img/BG1.avif); */
+            color: #333;
+        }
+
+
+
+        section {
+            min-height: 30vh;
+
+            padding: 4rem;
+            margin: 5rem 0;
+
+            background: rgba(255, 255, 255, 0.85);
+
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+        }
+
+        header {
+            background-color: #02182e;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            background: #03254687;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            /* padding: 0.3rem .5rem; */
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a:focus {
+
+            transform: scale(1.05);
+
+        }
+
+
+
+        h2 {
+            color: #00509e;
+        }
+
+        .UnderLine {
+            width: 30vw;
+            height: 1.5px;
+            background-color: #c3d5e9;
+            margin: 0.5rem auto 1.5rem auto;
+        }
+    </style>
+</head>
+
+
+<header>
+    <h1>Diptendu Das</h1>
+    <p>Aspiring Front-End Developer | B.Tech Student</p>
+</header>
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#timeline">My Education</a>
+    <a href="#contact">Contact</a>
+
+</nav>
+<main>
+    <div class="background" id="bg1"></div>
+
+    <section id="about">
+        <div class="about_heading ">
+            <h2>About Me</h2>
+            <hr class="UnderLine">
+        </div>
+        <div class="about_body">
+            <div id="about_bodyimg"><img src="img/DP.jpeg" alt="My DP"></div>
+            <div id="about_bodymsg">Hello! I'm DiptenDU, a 2nd-year B.Tech student at OUTR. I'm passionate about web
+                development and currently
+                learning HTML, CSS, and JavaScript to become a professional front-end developer.
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="skills">
+        <div class="section_skillshead">
+            <h2>skills</h2>
+            <hr class="UnderLine">
+        </div>
+        <div class="section_skillsbody">
+            <div class="Skillcard" id="Skillcard1"><img src="img/HTML5logo.png" alt="HTML5" width="90px">
+                <p>HTML (Basic)</p>
+            </div>
+            <div class="Skillcard" id="Skillcard2"><img src="img/CSSlogo.png" alt="HTML5" width="90px">
+                <p>CSS (Learning)</p>
+            </div>
+            <div class="Skillcard" id="Skillcard3"><img src="img/JSlogo.png" alt="HTML5" width="90px">
+                <p>JavaScript (Learning)</p>
+            </div>
+            <div class="Skillcard" id="Skillcard4"><img src="img/Clogo.png" alt="HTML5" width="90px">
+                <p>C Programming</p>
+            </div>
+            <div class="Skillcard" id="Skillcard5"><img src="img/VSCodelogo.png" alt="HTML5" width="90px">
+                <p>VS Code</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="projects">
+        <div class="project_head">
+            <h2>Projects</h2>
+            <hr class="UnderLine">
+        </div>
+        <div class="project_body">
+            <div class="Projectcard">
+                <a href="http://127.0.0.1:3000/Myportfolio.html">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>This very portfolio site showcasing my learning journey and skills.</p>
+                </a>
+            </div>
+
+            <div class="Projectcard">
+                <h3>Coming Soon...</h3>
+                <p>More projects will be added as I continue learning!</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="resume">
+        <div class="resume_head">
+            <h2>My Resume</h2>
+            <hr class="UnderLine">
+        </div>
+        <div class="resume_body">
+            <p>You can view and download my latest resume here:</p>
+            <a href="files/Diptendu's Resume.pdf" download class="resume-button">
+                📄 Download Resume
+            </a>
+        </div>
+    </section>
+
+
+
+    <section id="timeline">
+        <div class="timeline_head">
+            <h2>My Education</h2>
+            <hr class="UnderLine">
+        </div>
+        <div class="timeline_body">
+
+            <div class="timeline_item">
+                <h3>2024 - Present</h3>
+                <p>B.Tech in Electrical Engineering, OUTR, Bhubaneswar</p>
+                <div class="details">
+                    <p>CGPA: - / 10</p>
+                    <p>Major subjects: Anolog Electric, ---</p>
+                </div>
+            </div>
+
+            <div class="timeline_item">
+                <h3>2021 - 2023</h3>
+                <p>CHSE, R.I.H.S, Bhograi, Balasore, Odisha</p>
+                <div class="details">
+                    <p>Marks: 83%</p>
+                    <p>Subjects: Physics, Chemistry, Math, Biology</p>
+                </div>
+            </div>
+
+            <div class="timeline_item">
+                <h3>2019 - 2021</h3>
+                <p>10th Grade, P.P.N.V.M, Kalahi</p>
+                <div class="details">
+                    <p>Marks: 87%</p>
+                    <p>Board: HSCE</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="contact">
+        <div class="contact_head">
+            <h2>Contact Me</h2>
+            <hr class="UnderLine">
+        </div>
+
+        <div class="contact_body">
+            <div class="myContact">
+                <h3>Contact Info</h3>
+                <p>Address: Ghatikia, Khandagiri, Bhubaneswar</p>
+                <p>Email: diptendudas522@gmail.com</p>
+                <p>Phone: +91-6371137225</p>
+            </div>
+            <div class="userQuerry">
+                <form action="https://formspree.io/f/xyzjogdo" method="POST">
+                <h3>Drop your Querry and Feedback here...</h3>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter Your Name">
+                <label for="Email">Email</label>
+                <input type="Email" id="Email" placeholder="Enter Your Email">
+                <label for="Querry">Message</label>
+                <textarea name="Querry" id="Querry"
+                    placeholder="Write your message here...">Write your message</textarea>
+                <button>Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<a href="#" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-up-long fa-bounce"></i>
+</a>
+
+<footer>
+    <p>© 2025 Diptendu Das | Portfolio Website</p>
+
+    <div class="social-icons">
+        <a href="mailto:diptendudas522@gmail.com" aria-label="Email" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://github.com/dipten" aria-label="GitHub" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/diptendu-das-35a614334" aria-label="LinkedIn" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com" aria-label="Twitter" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+
+</footer>
+<script>
+    document.querySelectorAll('.timeline_item').forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+</script>
+<script>
+    const backToTopButton = document.querySelector('.back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    backToTopButton.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+</body>
+
+</html>

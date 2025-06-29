@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diptendu Das | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      animation: slideDown 1.5s ease-out;
+    }
+
+    p.quote {
+      font-style: italic;
+      margin: 1rem auto 2rem;
+      max-width: 500px;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    .enter-btn {
+      padding: 0.8rem 2rem;
+      background-color: #00bfff;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .enter-btn:hover {
+      transform: scale(1.1);
+      background-color: #008ecc;
+    }
+
+    .animated-blocks {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .animated-blocks span {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.15);
+      animation: moveBlock 20s linear infinite;
+      border-radius: 4px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes moveBlock {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(1000px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to Diptendu's Space</h1>
+    <p class="quote">"Code is like poetry — it’s beautiful, expressive, and crafted with love."</p>
+    <a href="http://127.0.0.1:3000/Myportfolio.html"><button class="enter-btn">Enter Portfolio</button></a>
+  </div>
+
+  <div class="animated-blocks">
+    <!-- 30 animated blocks -->
+    <script>
+      for (let i = 0; i < 30; i++) {
+        const block = document.createElement('span');
+        block.style.left = Math.random() * 100 + 'vw';
+        block.style.top = Math.random() * -100 + 'vh';
+        block.style.animationDuration = (10 + Math.random() * 20) + 's';
+        block.style.width = block.style.height = 10 + Math.random() * 20 + 'px';
+        document.querySelector('.animated-blocks').appendChild(block);
+      }
+    </script>
+  </div>
+</body>
+
+</html>

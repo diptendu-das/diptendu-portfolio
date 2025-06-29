@@ -1,0 +1,43 @@
+.resume_body {
+    color: aliceblue;
+    margin-top: .5rem;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin: 1.5rem;
+    background: linear-gradient(135deg, #00509e, #003366);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Doubt */
+.resume-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-20deg);
+    transition: left 0.5s;
+}
+
+.resume-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #003366, #001f4d);
+}
+
+/* Doubt */
+.resume-button:hover::after {
+    left: 125%;
+}

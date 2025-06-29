@@ -1,0 +1,63 @@
+#skills,
+#projects,
+#resume,
+#contact {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    background: #1d1c20d4;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #1f2127fc, #001020f0);
+}
+
+.section_skillsbody {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.Skillcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2px;
+    background: linear-gradient(125deg,#a3a3bdcc,#d7d6e3,#b8b8bdc7);
+    padding: 0.3rem;
+    margin: 1rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.Skillcard:hover {
+    /* background: rgb(145, 0, 0); */
+     transform: scale(1.05);
+    /* border: 2px solid #afb2b5; */
+  box-shadow: 0 8px 25px rgba(238, 240, 241, 0.3);
+}
+#Skillcard1:hover{
+    background-color: rgb(229, 229, 240);
+}
+#Skillcard2:hover{
+    background-color: rgb(230, 240, 236);
+}
+#Skillcard3:hover{
+    background-color: rgb(240, 233, 240);
+}
+#Skillcard4:hover{
+    background-color: #efdde3;
+}
+#Skillcard5:hover{
+    background-color: rgb(235, 228, 245);
+}

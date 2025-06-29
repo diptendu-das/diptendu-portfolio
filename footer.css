@@ -1,0 +1,63 @@
+ footer {
+
+     text-align: center;
+     padding: 1rem;
+     background: #02182e;
+     color: white;
+
+ }
+
+ .social-icons {
+     margin-top: 1rem;
+ }
+
+ .social-icons a {
+     color: white;
+     margin: 0 10px;
+     font-size: 1.4rem;
+     transition: transform 0.3s, color 0.3s;
+     text-decoration: none;
+     display: inline-block;
+     vertical-align: middle;
+ }
+
+ .social-icons a:hover,
+ .social-icons a:focus {
+     color: #00bfff;
+     transform: scale(1.001);
+     outline: none;
+ }
+
+ .back-to-top {
+     position: fixed;
+     top: 92%;
+     left: 96%;
+     transform: translate(-50%, -50%);
+     background-color: #00509e;
+     color: white;
+     font-size: -0.5rem;
+     text-decoration: none;
+     padding: 0.45rem .7rem;
+     border-radius: 50%;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     transition: opacity 0.3s ease, transform 0.3s ease;
+     opacity: 0;
+     visibility: hidden;
+     z-index: 1000;
+ }
+
+ .back-to-top.show {
+     opacity: 1;
+     visibility: visible;
+ }
+
+ .back-to-top:hover {
+     background-color: #162437e3;
+
+ }
+
+ .back-to-top:active {
+     background-color: #f3f4ffe3;
+     color: rgb(16, 12, 35);
+
+ }

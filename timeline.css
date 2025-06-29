@@ -1,0 +1,149 @@
+#timeline {
+    /* background-color: #f7f9fc; */
+    padding: 3rem 1rem;
+    position: relative;
+    background: linear-gradient(135deg, #1f2127fc, #001020f0);
+}
+
+.timeline_head {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.timeline_body {
+    position: relative;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+}
+
+/* Doubt */
+.timeline_body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background-color: #00509e;
+    transform: translateX(-50%);
+}
+
+.timeline_item {
+    position: relative;
+    background: linear-gradient(135deg, #ffffffe0, #b1c0eef7);
+    border-left: 4px solid #00509e;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    width: 45%;
+    margin: 2rem 0;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.timeline_item .details {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+    padding-left: 1rem;
+    border-left: 2px solid #00509e;
+    margin-top: 0.5rem;
+    color: #333;
+    background: #f1f5fa;
+    border-radius: 5px;
+}
+
+/* Doubt */
+.timeline_item.active .details {
+    max-height: 300px;
+    opacity: 1;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-left: 2px solid #00509e;
+    background: #e9f1fa;
+    border-radius: 5px;
+}
+
+/* Alternating left/right */
+.timeline_item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline_item:nth-child(even) {
+    left: 55%;
+}
+
+
+/* Doubt */
+.timeline_item:nth-child(odd)::before {
+    right: -20px;
+    border-left-color: #00509e;
+}
+
+.timeline_item:nth-child(even)::before {
+    left: -20px;
+    border-right-color: #00509e;
+}
+
+/* Doubt */
+/* Hover animation like your button shine */
+.timeline_item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 80, 158, 0.05);
+    transform: skewX(-20deg);
+    transition: left 0.5s ease;
+    pointer-events: none;
+}
+
+.timeline_item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Doubt */
+.timeline_item:hover::after {
+    left: 125%;
+}
+
+.timeline_item h3 {
+    color: #00509e;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.timeline_item p {
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Responsive: center everything on small screens */
+@media (max-width: 768px) {
+    .timeline_body::before {
+        left: 10px;
+    }
+
+    .timeline_item {
+        width: 100%;
+        left: 0 !important;
+        margin-left: 2rem;
+    }
+
+    .timeline_item::before {
+        display: none;
+    }
+}

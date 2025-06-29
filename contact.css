@@ -1,0 +1,63 @@
+        .contact_body {
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .myContact {
+
+
+            text-align: start;
+            gap: 2rem;
+            display: flex;
+            flex-direction: column;
+            margin: 0 3rem 0 1rem;
+            padding: 0 2rem;
+
+        }
+
+        .userQuerry input,
+        .userQuerry textarea {
+
+            display: flex;
+            width: 100%;
+            max-width: 400px;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .userQuerry label {
+            font-weight: bold;
+
+            margin-top: 1rem;
+            display: block;
+            text-align: left;
+        }
+
+        .userQuerry button {
+
+            max-width: 500px;
+            width: 30%;
+            background: linear-gradient(45deg, rgba(205, 202, 202, 0.896), rgba(250, 250, 251, 0.759), white);
+            color: rgb(4, 17, 29);
+            border: 1px solid gray;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin-top: 10px;
+            margin-right: auto;
+
+        }
+
+        .userQuerry button:hover {
+           background: rgb(255, 255, 255);
+           transform: scale(1.005);
+        }
+        .userQuerry button:active{
+           background: rgb(44, 44, 87);
+           color: rgb(208, 207, 212);
+           transform: scale(1.05);
+        }
